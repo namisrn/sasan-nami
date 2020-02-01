@@ -1,0 +1,323 @@
+/*** Colors ***//***
+
+Registration Black      #000000
+Yankees Blue            #14213d
+Vivid Red               #f60018
+Platinum                #e5e5e5
+Silver Chalice          #afafaf
+White                   #ffffff
+
+/*** Colors ***/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+
+    max-width: 100%;
+
+
+    /* border: 2px dashed red; */
+}
+
+
+.banner  .welcome{
+
+    color: #afafaf ;
+    height: 100vh;      /*make the header full screen */
+    padding: 5vh;
+
+    /* border: 2px dashed red;  */
+}
+
+.welcome{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h2, h4, h5{
+
+    margin: 0 auto;
+    align-items: center;
+
+
+}
+
+ .banner h2 {
+    margin-top: auto;
+    font-size: 35px;
+}
+
+.banner h2 span{
+    font-size: 1.2em;
+}
+
+.banner h4{
+    font-size: 22px;
+    font-weight: 300;
+    /* margin: 0; */
+    padding: 0;
+    line-height: 1.5em;
+    letter-spacing: 2.2px;
+}
+.banner h5{
+    font-size: 15px;
+    font-weight: 400;
+    /* margin: 0; */
+    padding: 0;
+    line-height: 2em;
+    letter-spacing: 3.65px;
+    margin-bottom: auto;
+}
+
+/************************** under constroction TEXT ********************/
+.welcome h3{
+    color: #f60018;
+    letter-spacing: 15px;
+    font-style: italic ;
+}
+/************************** under constroction TEXT ********************/
+
+nav{
+
+    height: 10vh;
+    background: #000000;
+    position: sticky;
+    top: 0px;
+
+    /* border: 2px dashed red; */
+}
+
+.main-menu{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    width: 50%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0 auto;
+
+    white-space: nowrap;
+
+    
+
+}
+
+
+nav li a{
+    
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 20px;
+}
+
+
+.logo{
+
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.skillContainer{
+    padding: 20px;
+}
+
+
+/****************MAIN ****************/
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    color: #e5e5e5;
+
+    /* border: 2px dashed red;  */
+}
+
+/*****Section: About ME *****/
+.aboutMe{
+    text-align: justify;
+    padding: 10px;
+
+
+    /* border: 2px dashed red;  */
+}
+
+
+.myPic{
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 1.7em;
+}
+
+.infoAndPic {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 30%;
+    padding: 20px;
+    margin-left: 10%;
+
+
+
+    /* border: 2px dashed red;  */
+
+}
+.skills{
+    display: inline-block;
+    width: 40%;
+    margin-left: 10%;
+
+    /* border: 2px dashed red;  */
+}
+
+.htmlLogo , .cssLogo , .jsLogo , .javaLogo{
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*****ENDE: About ME *****/
+´
+
+
+
+/*****Section: Portfolio *****/
+
+.portfolio{
+    padding: 10px;
+    height: 200px;  /**Beispiel*/
+
+    border: 2px dashed red; 
+}
+
+/*****ENDE: Portfolio *****/
+
+/*****Section: Blog *****/
+
+.blog{
+    padding: 10px;
+    height: 200px;  /**Beispiel*/
+
+    
+
+
+    border: 2px dashed red; 
+}
+
+/*****ENDE: Blog *****/
+
+/*****Section: Youtube *****/
+
+.youTube{
+    padding: 10px;
+    height: 200px;  /**Beispiel*/
+
+
+
+    border: 2px dashed red; 
+}
+
+/*****ENDE: Youtube *****/
+
+/*****Section: contact *****/
+
+form{
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    height: auto;   
+
+    /* border: 2px dashed red;  */
+}
+
+.contact h3{
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+ 
+input[type=text], select, textarea  {
+    
+    background-color: #3d3d3d ;
+    color: #e5e5e5;
+    width: 50%; 
+    padding: 10px; 
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    margin: 10px auto;
+    resize: vertical 
+
+  }
+
+
+input[type=submit] {
+
+    background-color: #f60018;
+    width: 50%;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #aa0415;
+  }
+  
+
+
+
+/*****ENDE: contact *****/
+
+/**************** ENDE: MAIN ****************/
+
+/**************** FOOTER ****************/
+
+
+footer{
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    flex-shrink: 0;
+
+    /* border: 2px dashed red;  */
+}
+
+/**************** ENDE: FOOTER ****************/
+
+
+
+
+
+/**************** Responsive ****************/
+
+
