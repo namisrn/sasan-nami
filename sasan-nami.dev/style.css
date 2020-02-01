@@ -40,7 +40,7 @@ body{
 }
 
 .welcome{
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -53,7 +53,7 @@ body{
 
 }
 
- .banner h2 {
+.banner h2 {
     margin-top: auto;
     font-size: 35px;
 }
@@ -88,53 +88,55 @@ body{
 }
 /************************** under constroction TEXT ********************/
 
+
+/************************** navigation bar ******************************/
+
 nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     height: 10vh;
     background: #000000;
     position: sticky;
     top: 0px;
 
-    /* border: 2px dashed red; */
+    /*border: 2px dashed red;*/
 }
 
 .main-menu{
-    
+
     display: flex;
     justify-content: space-around;
+    width: 60%;
     align-items: center;
-
     list-style: none;
-    width: 50%;
-    height: 100%;
 
+    height: 100%;
     padding: 0;
     margin: 0 auto;
-
     white-space: nowrap;
-
-    
 
 }
 
 
 nav li a{
-    
+
     text-decoration: none;
     color: #e5e5e5;
     font-size: 20px;
+    letter-spacing: 2px;
 }
-
 
 .logo{
-
-    height: 30px;
-    margin-right: 20px;
+    color: #aa0415;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 5%;
 }
 
-
-
-
+/************************** navigation bar ******************************/
 
 
 .skillContainer{
@@ -204,13 +206,13 @@ main{
 
 
 
-/*****Section: Portfolio *****/
+    /*****Section: Portfolio *****/
 
 .portfolio{
     padding: 10px;
     height: 200px;  /**Beispiel*/
 
-    border: 2px dashed red; 
+    border: 2px dashed red;
 }
 
 /*****ENDE: Portfolio *****/
@@ -221,10 +223,10 @@ main{
     padding: 10px;
     height: 200px;  /**Beispiel*/
 
-    
 
 
-    border: 2px dashed red; 
+
+    border: 2px dashed red;
 }
 
 /*****ENDE: Blog *****/
@@ -237,7 +239,7 @@ main{
 
 
 
-    border: 2px dashed red; 
+    border: 2px dashed red;
 }
 
 /*****ENDE: Youtube *****/
@@ -250,7 +252,7 @@ form{
     flex-direction: column;
 
     padding: 30px;
-    height: auto;   
+    height: auto;
 
     /* border: 2px dashed red;  */
 }
@@ -261,20 +263,20 @@ form{
     margin-top: 50px;
     margin-bottom: 0;
 }
- 
+
 input[type=text], select, textarea  {
-    
+
     background-color: #3d3d3d ;
     color: #e5e5e5;
-    width: 50%; 
-    padding: 10px; 
+    width: 50%;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 10px auto;
-    resize: vertical 
+    resize: vertical
 
-  }
+}
 
 
 input[type=submit] {
@@ -287,12 +289,12 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #aa0415;
-  }
-  
+}
+
 
 
 
@@ -319,5 +321,29 @@ footer{
 
 
 /**************** Responsive ****************/
+@media screen and (max-width:1024px) {
+    .main-menu {
+        width: 80%;
+    }
+}
 
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden ;
+    }
+    .main-menu{
+        position: absolute;
+        height: 30vh;
+        background: rgba(34, 34, 34, 0.82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: #e5e5e5;
+    }
+    .logo{
+        display: none;
+    }
+
+}
 
