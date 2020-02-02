@@ -134,8 +134,12 @@ nav li a {
 .logo {
     color: #aa0415;
     letter-spacing: 2px;
-    font-size: 20px;
     margin-left: 5%;
+}
+
+.logo h4{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /************************** END navigation bar ******************************/
@@ -362,6 +366,34 @@ footer {
     .main-menu {
         width: 80%;
     }
+    /**************************************************************/
+    .portfolio {
+        height: 200px;
+    }
+
+    .portfolio-1 , .portfolio-2 , .portfolio-3 {
+        width: 30vw;
+        margin: 1vh 0;
+    }
+    /****************************************************************/
+    .blog {
+        height: 200px;
+    }
+
+    .blog-1 , .blog-2 , .blog-3 {
+        width: 30vw;
+        margin: 1vh 0;
+    }
+    /****************************************************************/
+    .youTube {
+        height: 200px;
+    }
+
+    .video-1 , .video-2 , .video-3 {
+        width: 30vw;
+        margin: 1vh 0;
+    }
+    /****************************************************************/
 }
 
 @media screen and (max-width: 768px) {
@@ -371,7 +403,7 @@ footer {
 
     .main-menu {
         position: absolute;
-        height: 30vh;
+        height: auto;
         background: rgba(34, 34, 34, 0.82);
         display: flex;
         flex-direction: column;
@@ -383,6 +415,38 @@ footer {
     .logo {
         display: none;
     }
+ /**************************************************************/
+    .portfolio {
+            flex-direction: column;
+            height: 400px;
+            margin-bottom: 2.5vh;
+         }
 
+    .portfolio-1 , .portfolio-2 , .portfolio-3 {
+        width: 300px;
+        margin: 0.8vh 0;
+    }
+/****************************************************************/
+    .blog {
+        flex-direction: column;
+        height: 400px;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1 , .blog-2 , .blog-3 {
+        width: 300px;
+        margin: 0.8vh 0;
+    }
+/****************************************************************/
+    .youTube {
+        flex-direction: column;
+        height: 400px;
+        margin-bottom: 2.5vh;
+    }
+
+    .video-1 , .video-2 , .video-3 {
+        width: 300px;
+        margin: 0.8vh 0;
+    }
 }
 
