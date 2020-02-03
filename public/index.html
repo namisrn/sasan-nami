@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<!----------------------------------- START: Banner ----------------------------------------->
+
 
 <section class="banner">
     <div class="welcome">
@@ -23,7 +25,10 @@
     </div>
 </section>
 
-<!-----------------------------------navigation bar----------------------------------------->
+<!----------------------------------- END: Banner ----------------------------------------->
+
+
+<!----------------------------------- START: navigation bar----------------------------------------->
 
 <nav>
 
@@ -52,7 +57,7 @@
 
 <main>
 
-<!----------------------------------- START: about me  ----------------------------------------->
+    <!----------------------------------- START: about me  ----------------------------------------->
     <section class="aboutMe">
         <section class="infoAndPic">
             <img alt="myPic" class="myPic" src="img/mypic.jpg">
@@ -106,84 +111,103 @@
 
         </aside>     <!--END skills-->
     </section>  <!--END aboutMe-->
-<!----------------------------------- END: about me  ----------------------------------------->
+    <!----------------------------------- END: about me  ----------------------------------------->
 
-<!----------------------------------- START: portfolio  ----------------------------------------->
-    <section class="portfolio">
-
-        <h4>portfolio (soon)</h4>
-
-        <div class="portfolio-1">
-        </div>
-
-        <div class="portfolio-2">
-        </div>
-
-        <div class="portfolio-3">
-        </div>
-
-    </section>
-<!----------------------------------- END: portfolio  ----------------------------------------->
-
-<!----------------------------------- START: blog  ----------------------------------------->
-    <section class="blog">
-
-        <h4>Blog (soon)</h4>
-
-        <div class="blog-1">
-        </div>
-
-        <div class="blog-2">
-        </div>
-
-        <div class="blog-3">
-        </div>
-
-    </section>
-<!----------------------------------- END: blog  ----------------------------------------->
-
-<!----------------------------------- START: YouTube  ----------------------------------------->
+    <!----------------------------------- START: YouTube  ----------------------------------------->
     <section class="youTube">
 
-        <h4>YouTube Videos (soon)</h4>
+        <hr>
+        <h4>YouTube Videos</h4>
 
-        <div class="video-1">
-        </div>
+        <div class="videoContainer">
+            <iframe class="video-1" src="https://www.youtube.com/embed/xfKH99vbQtA" frameborder="0" allow="accelerometer; autoplay;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <div class="video-2">
-        </div>
+            <iframe class="video-2" src="https://www.youtube.com/embed/ZZ3kW5TL6ro" frameborder="0" allow="accelerometer;
+            autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <div class="video-3">
+            <iframe class="video-3" src="https://www.youtube.com/embed/BeA87bBlmZ0" frameborder="0" allow="accelerometer; autoplay;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </section>
-<!----------------------------------- END: YouTube  ----------------------------------------->
+    <!----------------------------------- END: YouTube  ----------------------------------------->
 
 
+    <!----------------------------------- START: portfolio  ----------------------------------------->
+    <section class="portfolio">
 
+        <hr>
+        <h4>portfolio (soon)</h4>
+
+        <div class="portfolioContainer">
+            <div class="portfolio-1">
+            </div>
+
+            <div class="portfolio-2">
+            </div>
+
+            <div class="portfolio-3">
+            </div>
+        </div>
+
+    </section>
+    <!----------------------------------- END: portfolio  ----------------------------------------->
+
+
+    <!----------------------------------- START: blog  ----------------------------------------->
+    <section class="blog">
+
+        <hr>
+        <h4>Blog (soon)</h4>
+
+        <div class="blogContainer">
+            <div class="blog-1">
+            </div>
+
+            <div class="blog-2">
+            </div>
+
+            <div class="blog-3">
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- END: blog  ----------------------------------------->
+
+
+    <!----------------------------------- START: Contact  ----------------------------------------->
 
     <section class="contact">
 
-        <h3>Contact me</h3>
+<!--        <h3>Contact me</h3>-->
 
-        <form>
+<!--        <form>-->
 
-            <label for="fname"></label>
+<!--            <label for="fname"></label>-->
+<!--            <input id="fname" name="firstname" placeholder="Your name..." type="text">-->
+<!--            <label for="lname"></label>-->
+<!--            <input id="lname" name="lastname" placeholder="Your last name..." type="text">-->
+<!--            <input name="email" placeholder="Your Email..." required type="email">-->
+<!--            <label for="subject"></label>-->
+<!--            <textarea id="subject" name="subject" placeholder="Write somthing..." rows="3"></textarea>-->
+
+<!--            <input type="submit" value="Submit">-->
+
+<!--        </form>-->
+
+        <hr>
+        <fieldset>
+            <legend align="center">Contact me</legend>
             <input id="fname" name="firstname" placeholder="Your name..." type="text">
-
-            <label for="lname"></label>
             <input id="lname" name="lastname" placeholder="Your last name..." type="text">
-
-            <label for="email"></label>
             <input name="email" placeholder="Your Email..." required type="text">
-
-            <label for="subject"></label>
+            <span class="tick"></span>
             <textarea id="subject" name="subject" placeholder="Write somthing..." rows="3"></textarea>
 
-            <input type="submit" value="Submit">
-
-        </form>
+        </fieldset>
     </section>
+    <!----------------------------------- END: Contact  ----------------------------------------->
+
 
 </main>
 
@@ -192,6 +216,6 @@
     <p class="copyright"> Copyright 2020 Sasan R.Nami</p>
 
 </footer>
-<script src="action.js"></script>
+
 </body>
 </html>

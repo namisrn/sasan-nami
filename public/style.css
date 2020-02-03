@@ -19,6 +19,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+hr {
+    border: 1px dotted #505050;
+}
+
 .banner {
     position: relative;
     text-align: center;
@@ -81,14 +85,14 @@ body {
     margin-bottom: auto;
 }
 
-/************************** under constroction TEXT ********************/
+/************************** under construction TEXT ********************/
 .welcome h3 {
     color: #f60018;
     letter-spacing: 15px;
     font-style: italic;
 }
 
-/************************** under constroction TEXT ********************/
+/************************** under construction TEXT ********************/
 
 
 /************************** START navigation bar ******************************/
@@ -110,14 +114,14 @@ nav {
 .main-menu {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     align-items: center;
     list-style: none;
 
     height: 100%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
     white-space: nowrap;
 
 }
@@ -134,7 +138,7 @@ nav li a {
 .logo {
     color: #aa0415;
     letter-spacing: 2px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .logo h4 {
@@ -207,66 +211,19 @@ main {
 
 /*****ENDE: About ME *****/
 
-/********************************* START Section: Portfolio *****************/
-
-.portfolio {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    height: 250px;
-
-    /*border: 2px dashed red;*/
-}
-
-.portfolio-1, .portfolio-2, .portfolio-3 {
-    width: 300px;
-    height: 180px;
-    overflow: hidden;
-    background-color: #303030;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-.portfolio h4 {
-    position: absolute;
-    display: inline;
-    /*justify-content: center;*/
-}
-
-/********************************* END Section: Portfolio *****************/
-
-/********************************* START Section: blog *****************/
-
-.blog {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    height: 250px;
-
-    /*border: 2px dashed red;*/
-}
-
-.blog-1, .blog-2, .blog-3 {
-    width: 300px;
-    height: 180px;
-    overflow: hidden;
-    background-color: #303030;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-.blog h4 {
-    position: absolute;
-    display: inline;
-}
-
-/********************************* END Section: blog *****************/
-
 /********************************* START Section: YouTube *****************/
+.youTube h4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    margin: 0 0 5px 0;
 
-.youTube {
+}
+
+.videoContainer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -277,72 +234,154 @@ main {
 }
 
 .video-1, .video-2, .video-3 {
-    width: 300px;
-    height: 180px;
+    width: 350px;
+    height: 190px;
     overflow: hidden;
     background-color: #303030;
-    border-radius: 10px;
+    border-radius: 1em;
     margin: 0 auto;
 }
 
-.youTube h4 {
-    position: absolute;
-    display: inline;
-}
 
 /********************************* END Section: YouTube *****************/
 
+/********************************* START Section: Portfolio *****************/
+.portfolio h4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    margin: 0 0 10px 0;
+}
+
+.portfolioContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 250px;
+
+    /*border: 2px dashed red;*/
+}
+
+.portfolio-1, .portfolio-2, .portfolio-3 {
+    width: 350px;
+    height: 190px;
+    overflow: hidden;
+    background-color: #303030;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+
+
+/********************************* END Section: Portfolio *****************/
+
+/********************************* START Section: blog *****************/
+.blog h4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    margin: 0 0 10px 0;
+}
+
+.blogContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 250px;
+
+    /*border: 2px dashed red;*/
+}
+
+.blog-1, .blog-2, .blog-3 {
+    width: 350px;
+    height: 190px;
+    overflow: hidden;
+    background-color: #303030;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+/********************************* END Section: blog *****************/
+
+
 /*****Section: contact *****/
+
+
+.contact h3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
 
 form {
 
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     padding: 30px;
     height: auto;
-
+    width: 70%;
+    margin: 0px auto;
     /* border: 2px dashed red;  */
 }
 
-.contact h3 {
-    text-align: center;
+input[type=text] , input[type=email] , select , textarea {
 
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
-input[type=text], select, textarea {
-
-    background-color: #3d3d3d;
+    display: block;
+    margin: 15px auto;
+    padding: 10px 10px 10px 20px;
+    border: 0;
+    width: 100%;
+    background-color: #222222;
+    font-size: 16px;
     color: #e5e5e5;
-    width: 50%;
-    padding: 10px;
-    border: none;
     border-radius: 10px;
-    box-sizing: border-box;
-    margin: 10px auto;
-    resize: vertical
 
 }
-
 
 input[type=submit] {
 
     background-color: #f60018;
-    width: 50%;
-    color: white;
+    width: 60%;
+    color: #e5e5e5;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
+    box-shadow: 2px 3px 5px rgba(48, 48, 48, 0.5);
+    letter-spacing: 0.2em;
 }
 
 input[type=submit]:hover {
     background-color: #aa0415;
 }
 
+
+fieldset{
+
+
+    height: auto;
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px 30px;
+
+/* border: 2px dashed red;*/
+}
+
+legend{
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
 
 /*****ENDE: contact *****/
 
@@ -360,47 +399,64 @@ footer {
     /* border: 2px dashed red;  */
 }
 
+
+
+
+
 /**************** ENDE: FOOTER ****************/
 
 
 /**************** Responsive ****************/
+
+
+
+/*************************************************************** max-width: 1024px **********************/
+
 @media screen and (max-width: 1024px) {
     .main-menu {
         width: 80%;
     }
-
-    /**************************************************************/
-    .portfolio {
-        height: 200px;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 30vw;
-        margin: 1vh 0;
-    }
-
     /****************************************************************/
-    .blog {
-        height: 200px;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 30vw;
-        margin: 1vh 0;
-    }
-
-    /****************************************************************/
-    .youTube {
-        height: 200px;
+    .videoContainer {
+        height: 100%;
+        margin-bottom: 2.5vh;
     }
 
     .video-1, .video-2, .video-3 {
-        width: 30vw;
-        margin: 1vh 0;
+        width: 260px;
+        margin: 0.8vh 0;
+        border-radius: 5%;
+    }
+
+    /**************************************************************/
+    .portfolioContainer {
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 260px;
+        margin: 0.8vh 0;
+        border-radius: 5%;
     }
 
     /****************************************************************/
+    .blogContainer {
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1, .blog-2, .blog-3 {
+        width: 260px;
+        margin: 0.8vh 0;
+        border-radius: 5%;
+    }
+
+    /****************************************************************/
+
 }
+
+/*************************************************************** max-width: 768px **********************/
 
 @media screen and (max-width: 768px) {
     body {
@@ -422,40 +478,194 @@ footer {
         display: none;
     }
 
-    /**************************************************************/
-    .portfolio {
-        flex-direction: column;
-        height: 400px;
-        margin-bottom: 2.5vh;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 300px;
-        margin: 0.8vh 0;
-    }
-
     /****************************************************************/
-    .blog {
+    .videoContainer {
         flex-direction: column;
-        height: 400px;
-        margin-bottom: 2.5vh;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 300px;
-        margin: 0.8vh 0;
-    }
-
-    /****************************************************************/
-    .youTube {
-        flex-direction: column;
-        height: 400px;
+        height: 100%;
         margin-bottom: 2.5vh;
     }
 
     .video-1, .video-2, .video-3 {
-        width: 300px;
+        width: 450px;
+        height: 250px;
+
         margin: 0.8vh 0;
+    }
+
+    /**************************************************************/
+    .portfolioContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+
+    /****************************************************************/
+    .blogContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1, .blog-2, .blog-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+
+    /****************************************************************/
+    .banner h3 {         /** for 'under struction' sentence **/
+        letter-spacing: normal;
+    }
+
+    .aboutMe{
+        padding: 0;
+        width: 100%;
+        align-content: center;
+    }
+    .infoAndPic{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .myPic{
+        margin: 0 auto;
+    }
+    .info{
+        width: 70vw;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    .html , .css , .javaScript , .java{
+        width: 70vw;
+    }
+    .skills{
+        display: flex;
+        width: 70vw;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .skillContainer{
+        padding: 0;
+    }
+
+    input[type=text], select, textarea {
+        width: 65%;
     }
 }
 
+/*************************************************************** max-width: 400px **********************/
+
+@media screen and (max-width: 450px) {
+    .banner h2 {
+        font-size: inherit;
+    }
+    .banner span {
+        font-size: inherit;
+    }
+    .banner h4 {
+        font-size: inherit;
+    }
+    .banner h5 {
+        font-size: inherit;
+    }
+    .banner h3 {         /** for 'under struction' sentence **/
+        letter-spacing: normal;
+        font-size: inherit;
+    }
+
+    /****************************************************************/
+    .videoContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .video-1, .video-2, .video-3 {
+        width: 350px;
+        height: 200px;
+
+        margin: 0.8vh 0;
+    }
+
+    .youTube > h4{
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    /**************************************************************/
+    .portfolioContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 350px;
+        height: 200px;;
+
+        margin: 0.8vh 0;
+    }
+
+    .portfolio > h4{
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    /****************************************************************/
+    .blogContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1, .blog-2, .blog-3 {
+        width: 350px;
+        height: 200px;
+
+        margin: 0.8vh 0;
+    }
+
+    .blog > h4{
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    /****************************************************************/
+
+    .aboutMe{
+        padding: 0;
+        width: 100%;
+    }
+    .infoAndPic{
+        display: flex;
+        flex-direction: column;
+        margin: 0 ;
+    }
+    .info{
+        width: 70vw;
+        margin-top: 20%;
+    }
+    .html , .css , .javaScript , .java{
+        width: 60vw;
+    }
+    .myPic{
+        margin: 0 auto;
+        width: 200px;
+    }
+
+
+    input[type=text], select, textarea {
+        width: 100%;
+    }
+
+
+}
