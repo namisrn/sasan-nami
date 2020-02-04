@@ -14,9 +14,10 @@
     <!----------------------------------- START: Banner ----------------------------------------->
 
 
-    <section class="banner">
-        <div class="welcome">
-            <h2>Hi, <br><span>i'm Sasan Rafat Nami</span><br></h2>
+    <section id="home" class="home">
+
+        <div class="title">
+            <h2>Hi, <br><span>I'm Sasan Rafat Nami</span><br></h2>
             <h4>Junior Web-Developer & YouTuber</h4>
             <h5>Developer Student Clubs Lead 2019/20</h5>
 
@@ -37,13 +38,14 @@
         </div>
 
         <ul class="main-menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="https://www.youtube.com/newupdate20">YouTube</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
 
         <div class="burger">
             <div class="line1"></div>
@@ -58,7 +60,7 @@
     <main>
 
         <!----------------------------------- START: about me  ----------------------------------------->
-        <section class="aboutMe">
+        <section  id="aboutMe" class="aboutMe">
             <section class="infoAndPic">
                 <img alt="myPic" class="myPic" src="img/mypic.jpg">
                 <article class="info">
@@ -114,7 +116,7 @@
         <!----------------------------------- END: about me  ----------------------------------------->
 
         <!----------------------------------- START: YouTube  ----------------------------------------->
-        <section class="youTube">
+        <section id="youtube" class="youTube">
 
             <hr>
             <h4>YouTube Videos</h4>
@@ -135,7 +137,7 @@
 
 
         <!----------------------------------- START: portfolio  ----------------------------------------->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
 
             <hr>
             <h4>Portfolio (soon)</h4>
@@ -156,7 +158,7 @@
 
 
         <!----------------------------------- START: blog  ----------------------------------------->
-        <section class="blog">
+        <section id="blog" class="blog">
 
             <hr>
             <h4>Blog (soon)</h4>
@@ -177,23 +179,7 @@
 
         <!----------------------------------- START: Contact  ----------------------------------------->
 
-        <section class="contact">
-
-    <!--        <h3>Contact me</h3>-->
-
-    <!--        <form>-->
-
-    <!--            <label for="fname"></label>-->
-    <!--            <input id="fname" name="firstname" placeholder="Your name..." type="text">-->
-    <!--            <label for="lname"></label>-->
-    <!--            <input id="lname" name="lastname" placeholder="Your last name..." type="text">-->
-    <!--            <input name="email" placeholder="Your Email..." required type="email">-->
-    <!--            <label for="subject"></label>-->
-    <!--            <textarea id="subject" name="subject" placeholder="Write somthing..." rows="3"></textarea>-->
-
-    <!--            <input type="submit" value="Submit">-->
-
-    <!--        </form>-->
+        <section id="contact" class="contact">
 
             <hr>
             <fieldset>
@@ -203,8 +189,9 @@
                 <input name="email" placeholder="Your Email..." required type="text">
                 <span class="tick"></span>
                 <textarea id="subject" name="subject" placeholder="Write somthing..." rows="3"></textarea>
-
+                <input type="submit" value="Submit">
             </fieldset>
+
         </section>
         <!----------------------------------- END: Contact  ----------------------------------------->
 

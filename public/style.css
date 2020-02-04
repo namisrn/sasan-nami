@@ -8,85 +8,71 @@ Silver Chalice          #afafaf
 White                   #ffffff
 
 /*** Colors ***/
-
-
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 hr {
     border: 1px dotted #505050;
 }
 
-.banner {
+.home {
     position: relative;
     text-align: center;
-
     max-width: 100%;
 
-
-    /* border: 2px dashed red; */
+     /*border: 2px dashed red;*/
 }
 
-
-.banner .welcome {
-
+.title {
+    display: flex;
+    flex-direction: column;
     color: #afafaf;
     height: 100vh; /*make the header full screen */
     padding: 5vh;
 
-    /* border: 2px dashed red;  */
+    /*border: 2px dashed red;*/
 }
 
-.welcome {
-
-    display: flex;
-    flex-direction: column;
-}
-
-.banner h2, h4, h5 {
-
+.home  h2 , h5 , h4 {
     margin: 0 auto;
     align-items: center;
-
-
 }
 
-.banner h2 {
+.home h2 {
     margin-top: auto;
     font-size: 35px;
 }
 
-.banner h2 span {
+.home h2 span {
     font-size: 1.2em;
 }
 
-.banner h4 {
+.home h4 {
     font-size: 22px;
     font-weight: 300;
-    /* margin: 0; */
     padding: 0;
     line-height: 1.5em;
-    letter-spacing: 2.2px;
+    letter-spacing: 2.4px;
 }
 
-.banner h5 {
+.home h5 {
     font-size: 15px;
     font-weight: 400;
-    /* margin: 0; */
     padding: 0;
     line-height: 2em;
-    letter-spacing: 3.65px;
+    letter-spacing: 3.75px;
     margin-bottom: auto;
 }
 
 /************************** under construction TEXT ********************/
-.welcome h3 {
+.title h3 {
     color: #f60018;
     letter-spacing: 15px;
     font-style: italic;
@@ -106,7 +92,7 @@ nav {
     height: 10vh;
     background: #000000;
     position: sticky;
-    top: 0px;
+    top: 0;
 
     /*border: 2px dashed red;*/
 }
@@ -123,9 +109,7 @@ nav {
     padding: 0;
     margin: 0 ;
     white-space: nowrap;
-
 }
-
 
 nav li a {
 
@@ -133,6 +117,13 @@ nav li a {
     color: #e5e5e5;
     font-size: 20px;
     letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+nav li:hover a {
+    background: #f60018;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .logo {
@@ -350,7 +341,7 @@ input[type=text] , input[type=email] , select , textarea {
 input[type=submit] {
 
     background-color: #f60018;
-    width: 60%;
+    width: 100%;
     color: #e5e5e5;
     padding: 12px 20px;
     border: none;
@@ -359,10 +350,11 @@ input[type=submit] {
     margin: 0 auto;
     box-shadow: 2px 3px 5px rgba(48, 48, 48, 0.5);
     letter-spacing: 0.2em;
+    transition: 0.3s;
 }
 
 input[type=submit]:hover {
-    background-color: #aa0415;
+    background-color: #540415;
 }
 
 
@@ -546,7 +538,7 @@ footer .footerClass{
     }
 
     /****************************************************************/
-    .banner h3 {         /** for 'under struction' sentence **/
+    .home h3 {         /** for 'under struction' sentence **/
         letter-spacing: normal;
     }
 
@@ -590,19 +582,19 @@ footer .footerClass{
 /*************************************************************** max-width: 400px **********************/
 
 @media screen and (max-width: 450px) {
-    .banner h2 {
+    .home h2 {
         font-size: inherit;
     }
-    .banner span {
+    .home span {
         font-size: inherit;
     }
-    .banner h4 {
+    .home h4 {
         font-size: inherit;
     }
-    .banner h5 {
+    .home h5 {
         font-size: inherit;
     }
-    .banner h3 {         /** for 'under struction' sentence **/
+    .home h3 {         /** for 'under struction' sentence **/
         letter-spacing: normal;
         font-size: inherit;
     }
