@@ -18,8 +18,15 @@ body {
     scroll-behavior: smooth;
 }
 
+
 hr {
-    border: 1px dotted #505050;
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    width: 60%;
+    position: relative;
+    left: 20%;
+
 }
 
 .home {
@@ -27,7 +34,7 @@ hr {
     text-align: center;
     max-width: 100%;
 
-     /*border: 2px dashed red;*/
+    /*border: 2px dashed red;*/
 }
 
 .title {
@@ -93,7 +100,7 @@ nav {
     background: #000000;
     position: sticky;
     top: 0;
-
+    text-transform: uppercase;
     /*border: 2px dashed red;*/
 }
 
@@ -104,6 +111,7 @@ nav {
     width: 60%;
     align-items: center;
     list-style: none;
+
 
     height: 100%;
     padding: 0;
@@ -126,72 +134,82 @@ nav li:hover a {
     border-radius: 5px;
 }
 
-.logo {
-    color: #aa0415;
-    letter-spacing: 2px;
-    /* margin-left: 5%; */
-}
-
 .logo h4 {
-    font-size: 20px;
+    color: #aa0415;
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 0.1em;
+
 }
 
 /************************** END navigation bar ******************************/
 
-
-.skillContainer {
-    padding: 20px;
-}
-
-
-/****************MAIN ****************/
-main {
-    max-width: 100%;
-    width: 1200px;
-    margin: 40px auto;
-    padding: 10px;
-    box-sizing: border-box;
-
-    color: #e5e5e5;
-
-    /* border: 2px dashed red;  */
-}
-
 /*****Section: About ME *****/
 .aboutMe {
-    text-align: justify;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
     padding: 10px;
+    width: 100%;
 
-
-    /* border: 2px dashed red;  */
+    /* border: 2px dashed red; */
 }
+.anchor-1{
+    display: flex;
+    flex-basis: 55%;
 
+    /* border: 2px dashed white; */
+}
+.infoAndPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    vertical-align: text-bottom;
+    padding: 20px;
+    margin: 0 auto;
+
+    /*border: 2px dashed red;*/
+}
 
 .myPic {
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
-    margin-left: 1.7em;
+
+    /*border: 2px dashed red;*/
 }
 
-.infoAndPic {
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 30%;
-    padding: 20px;
-    margin-left: 10%;
+.info{
+    width: 300px;
+    height: auto;
+    margin-top: 1em;
+    color: #e5e5e5;
+    text-align: justify;
 
-
-    /* border: 2px dashed red;  */
-
+    /* border: 2px dashed red; */
 }
 
 .skills {
-    display: inline-block;
-    width: 40%;
-    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    vertical-align: text-bottom;
+    padding: 20px;
+    margin: 0 auto;
 
-    /* border: 2px dashed red;  */
+    /*border: 2px dashed red;*/
+}
+
+.skillContainer {
+    width: 380px;
+    height: auto;
+    padding: 20px;
 }
 
 .htmlLogo, .cssLogo, .jsLogo, .javaLogo {
@@ -203,67 +221,114 @@ main {
 /*****ENDE: About ME *****/
 
 /********************************* START Section: YouTube *****************/
+.youTube {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    max-width: 100%;
+
+    /* border: 2px dashed red; */
+}
+
+.anchor-2{
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 50%; */
+
+    /* border: 2px dashed white; */
+}
+
 .youTube h4 {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: 0.4em;
-    margin: 0 0 5px 0;
+    letter-spacing: 0.3em;
+    margin: 2em auto;
+    color: #e5e5e5;
 
+    /* border: 2px dashed red; */
 }
 
 .videoContainer{
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    margin: 0 auto;
 
-    height: 250px;
 
-    /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
 
 .video-1, .video-2, .video-3 {
     width: 350px;
-    height: 190px;
-    overflow: hidden;
+    height: 185px;
+    /* overflow: hidden; */
     background-color: #303030;
     border-radius: 1em;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
 
 /********************************* END Section: YouTube *****************/
 
 /********************************* START Section: Portfolio *****************/
+.portfolio{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    max-width: 100%;
+
+
+    /* border: 2px dashed red; */
+}
+
+.anchor-3{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px dashed white; */
+}
+
+
 .portfolio h4 {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: 0.4em;
-    margin: 0 0 10px 0;
+    letter-spacing: 0.3em;
+    color: #e5e5e5;
+    margin: 2em auto
+    /* border: 2px dashed red; */
 }
 
 .portfolioContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    margin: 0 auto;
 
-    height: 250px;
-
-    /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
 
 .portfolio-1, .portfolio-2, .portfolio-3 {
     width: 350px;
     height: 190px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #303030;
     border-radius: 1em;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
 
@@ -271,33 +336,56 @@ main {
 /********************************* END Section: Portfolio *****************/
 
 /********************************* START Section: blog *****************/
+
+.blog{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin:20px;
+    padding: 10px;
+    max-width: 100%;
+
+
+    /* border: 2px dashed red; */
+}
+
+.anchor-4{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px dashed white; */
+}
+
 .blog h4 {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: 0.4em;
-    margin: 0 0 10px 0;
+    letter-spacing: 0.3em;
+    color: #e5e5e5;
+    margin: 2em auto
+    /* border: 2px dashed red; */
 }
 
 .blogContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    margin: 0 auto;
 
-    height: 250px;
-
-    /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
 
 .blog-1, .blog-2, .blog-3 {
     width: 350px;
     height: 190px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #303030;
     border-radius: 1em;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
 /********************************* END Section: blog *****************/
@@ -305,6 +393,17 @@ main {
 
 /*****Section: contact *****/
 
+.contact{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 100px 20px;
+    padding: 10px;
+    max-width: 100%;
+
+
+    /* border: 2px dashed red; */
+}
 
 .contact h3 {
     text-align: center;
@@ -312,16 +411,20 @@ main {
     margin-bottom: 0;
 }
 
-form {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
+fieldset{
     height: auto;
-    width: 70%;
-    margin: 0px auto;
-    /* border: 2px dashed red;  */
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px 30px;
+
+    /* border: 2px dashed red; */
+}
+
+legend{
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: #e5e5e5;
 }
 
 input[type=text] , input[type=email] , select , textarea {
@@ -358,22 +461,6 @@ input[type=submit]:hover {
 }
 
 
-fieldset{
-
-
-    height: auto;
-    width: 70%;
-    margin: 10px auto;
-    padding: 20px 30px;
-
-/* border: 2px dashed red;*/
-}
-
-legend{
-    padding: 10px;
-    font-size: 20px;
-    letter-spacing: 0.2em;
-}
 
 /*****ENDE: contact *****/
 
@@ -382,30 +469,31 @@ legend{
 /**************** FOOTER ****************/
 
 
-footer {
-    position: relative;
+.footer-container {
+
     display: flex;
     justify-content: center;
-    height: 180px;
+    align-items: center;
+    height: 250px;
     padding: 10px;
     color: #ffffff;
-    flex-shrink: 0;
+    align-items: center;
 
-     /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
 
-footer .footerClass{
+.footerClass{
     color: #aa0415;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.4em;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
     margin: 10px auto;
 }
 .social-media{
     display: flex;
     justify-content: space-evenly;
-    margin: 10px auto;,
+    margin: 10px auto;
 }
 
 .rights-text{
@@ -423,121 +511,162 @@ footer .footerClass{
 /**************** ENDE: FOOTER ****************/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************** Responsive ****************/
+
+
 
 
 
 /*************************************************************** max-width: 1024px **********************/
 
 @media screen and (max-width: 1024px) {
+
+
+    /***************************** HOME *****************************/
+    .title{
+        height: 100%;
+        padding: 2vh;
+    }
+    .home h2{
+        margin-top: 50px;
+    }
+    .home h5 {
+        margin-bottom: 50px;
+    }
+    .title h3{
+        font-size: 20px;
+    }
+
     .main-menu {
         width: 80%;
     }
-    /****************************************************************/
+
+
+    /********************** Section: YouTube *********************/
+    .anchor-2{
+        flex-basis: 100%;
+    }
+
     .videoContainer {
         height: 100%;
-        margin-bottom: 2.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .youTube h4{
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        margin: 0;
     }
 
     .video-1, .video-2, .video-3 {
-        width: 260px;
-        margin: 0.8vh 0;
+        width: 250px;
+        height: auto;
+        border-radius: 5%;
+        margin: 0 0.5vw;
+    }
+    /**************************************************************/
+
+    /********************* Section: Portfolio *********************/
+    .anchor-3{
+        flex-basis: 100%;
+    }
+
+    .portfolioContainer {
+        height: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .portfolio h4{
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        margin: 0;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 250px;
+        height: 160px;
+        margin: 0 0.5vw;
         border-radius: 5%;
     }
 
     /**************************************************************/
-    .portfolioContainer {
-        height: 100%;
-        margin-bottom: 2.5vh;
+
+    /*********************** Section: Blog ************************/
+    .anchor-4{
+        flex-basis: 100%;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 260px;
-        margin: 0.8vh 0;
-        border-radius: 5%;
-    }
-
-    /****************************************************************/
     .blogContainer {
         height: 100%;
-        margin-bottom: 2.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .blog h4{
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        margin: 0;
     }
 
     .blog-1, .blog-2, .blog-3 {
-        width: 260px;
-        margin: 0.8vh 0;
+        width: 250px;
+        height: 160px;
+        margin: 0 0.5vw;
         border-radius: 5%;
     }
 
-    /****************************************************************/
+    /**************************************************************/
 
+    /*********************** Section: Blog ************************/
+    .contact{
+        margin: 20px;
+    }
+    /**************************************************************/
 }
 
-/*************************************************************** max-width: 768px **********************/
 
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+/*************************************************************** max-width: 850px **********************/
 
-    .main-menu {
-        position: absolute;
-        height: auto;
-        background: rgba(34, 34, 34, 0.82);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        color: #e5e5e5;
-    }
+@media screen and (max-width: 850px) {
 
-    .logo {
-        display: none;
-    }
-
-    /****************************************************************/
-    .videoContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
-    .video-1, .video-2, .video-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
-    }
-
-    /**************************************************************/
-    .portfolioContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
-    }
-
-    /****************************************************************/
-    .blogContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
-    }
-
-    /****************************************************************/
+    /*********************** Section: Blog ************************/
     .home h3 {         /** for 'under struction' sentence **/
         letter-spacing: normal;
     }
@@ -577,99 +706,54 @@ footer .footerClass{
     input[type=text], select, textarea {
         width: 65%;
     }
-}
 
-/*************************************************************** max-width: 400px **********************/
 
-@media screen and (max-width: 450px) {
-    .home h2 {
-        font-size: inherit;
+    /***************************** NAV *****************************/
+    nav{
+        display: flex;
+        height: auto;
+        position: relative;
     }
-    .home span {
-        font-size: inherit;
-    }
-    .home h4 {
-        font-size: inherit;
-    }
-    .home h5 {
-        font-size: inherit;
-    }
-    .home h3 {         /** for 'under struction' sentence **/
-        letter-spacing: normal;
-        font-size: inherit;
-    }
-
-    /****************************************************************/
-    .videoContainer {
+    .main-menu {
+        position: relative;
+        height: auto;
+        background: #292929;
+        display: flex;
         flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
+        align-items: center;
+        width: 50%;
+        color:
+                #e5e5e5;
     }
 
-    .video-1, .video-2, .video-3 {
-        width: 350px;
-        height: 200px;
-
-        margin: 0.8vh 0;
-    }
-
-    .youTube > h4{
-        font-size: inherit;
-        font-weight: 600;
-    }
-
-    /**************************************************************/
-    .portfolioContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 350px;
-        height: 200px;;
-
-        margin: 0.8vh 0;
-    }
-
-    .portfolio > h4{
-        font-size: inherit;
-        font-weight: 600;
-    }
-
-    /****************************************************************/
-    .blogContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 350px;
-        height: 200px;
-
-        margin: 0.8vh 0;
-    }
-
-    .blog > h4{
-        font-size: inherit;
-        font-weight: 600;
+    .logo {
+        display: 1;
     }
 
     /****************************************************************/
 
+    /*************************** ABOUT ME **************************/
     .aboutMe{
-        padding: 0;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: 0px;
+        padding: 10px;
+        width: auto;
+    }
+    .anchor-1{
+        flex-direction: column;
+        flex-basis: 0%;
     }
     .infoAndPic{
         display: flex;
         flex-direction: column;
+        width: auto;
         margin: 0 ;
     }
     .info{
-        width: 70vw;
-        margin-top: 20%;
+        width: auto;
+        margin-top: 10%;
     }
     .html , .css , .javaScript , .java{
         width: 60vw;
@@ -679,10 +763,279 @@ footer .footerClass{
         width: 200px;
     }
 
+    .skills{
+        width: auto;
+    }
+
+    .skillContainer{
+        width: auto;
+    }
+    /****************************************************************/
+
+    /********************** Section: YouTube *********************/
+    .anchor-2{
+        flex-basis: 100%;
+    }
+
+    .videoContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .video-1, .video-2, .video-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+
+    /**************************************************************/
+
+    /********************* Section: Portfolio *********************/
+    .portfolioContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+    /****************************************************************/
+
+    /*********************** Section: Blog ************************/
+    .blogContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1, .blog-2, .blog-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+
+    /****************************************************************/
+
+    /*********************** Section: Contact ************************/
+    .fieldset{
+        width: 70%;
+    }
 
     input[type=text], select, textarea {
         width: 100%;
     }
+    /**************************************************************/
+
+}
+/*********************************************************** max-width: 450px **********************/
+
+@media screen and (max-width: 450px) {
+
+    /* .home h2 {
+        font-size: 25px;
+    }
+    .home h4 {
+        font-size: inherit;
+    }
+    .home h5 {
+        font-size: inherit;
+    }
+    .home h3 {         /** for 'under struction' sentence *
+        letter-spacing: normal;
+        font-size: inherit;
+    } */
+
+    /********************* Section: Portfolio *********************/
+    .portfolioContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+    /****************************************************************/
+
+    /********************** Section: YouTube *********************/
+    .anchor-2{
+        flex-basis: 50%;
+    }
+
+    .videoContainer {
+        height: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .youTube h4{
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        margin: 0;
+    }
+
+    .video-1, .video-2, .video-3 {
+        width: 150px;
+        /* height: auto; */
+        border-radius: 5%;
+        margin: 0 0.5vw;
+    }
+    /**************************************************************/
+
+    /*********************** Section: Blog ************************/
+    .blogContainer {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2.5vh;
+    }
+
+    .blog-1, .blog-2, .blog-3 {
+        width: 450px;
+        height: 250px;
+
+        margin: 0.8vh 0;
+    }
+
+    /****************************************************************/
+
+    /*********************** Section: Contact ************************/
+    .fieldset{
+        width: 70%;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+    }
+    /**************************************************************/
 
 
+
+
+    /************************************ max-width: 350px **********************************/
+
+    /********* Home *********/
+
+
+    @media screen and (max-width: 350px) {
+        .home h2 {
+            font-size: 20px;
+        }
+        .home h4 {
+            font-size: 12px;
+            letter-spacing: 0.11em;
+            font-weight: 600;
+        }
+        .home h5 {
+            font-size: 11px;
+            letter-spacing: 0.075em;
+            font-weight: 600;
+        }
+        .home h3 {         /** for 'under struction' sentence **/
+            letter-spacing: normal;
+            font-size: inherit;
+        }
+
+
+        /********* nav *********/
+
+
+
+
+
+
+        /****************************************************************/
+
+        .videoContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
+
+        .video-1, .video-2, .video-3 {
+            width: 350px;
+            height: 200px;
+
+            margin: 0.8vh 0;
+        }
+
+        .youTube > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
+
+        /**************************************************************/
+        .portfolioContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
+
+        .portfolio-1, .portfolio-2, .portfolio-3 {
+            width: 350px;
+            height: 200px;;
+
+            margin: 0.8vh 0;
+        }
+
+        .portfolio > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
+
+        /****************************************************************/
+        .blogContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
+
+        .blog-1, .blog-2, .blog-3 {
+            width: 350px;
+            height: 200px;
+
+            margin: 0.8vh 0;
+        }
+
+        .blog > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
+
+        /****************************************************************/
+
+        .aboutMe{
+            padding: 0;
+            width: 100%;
+        }
+        .infoAndPic{
+            display: flex;
+            flex-direction: column;
+            margin: 0 ;
+        }
+        .info{
+            width: 70vw;
+            margin-top: 20%;
+        }
+        .html , .css , .javaScript , .java{
+            width: 60vw;
+        }
+        .myPic{
+            margin: 0 auto;
+            width: 200px;
+        }
+
+
+        input[type=text], select, textarea {
+            width: 100%;
+        }
+    }
 }
