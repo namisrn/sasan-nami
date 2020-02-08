@@ -26,7 +26,6 @@ body {
 }
 
 
-
 hr {
     height: 10px;
     border: 0;
@@ -146,6 +145,7 @@ nav li a {
     font-size: 20px;
     letter-spacing: 2px;
     transition: 0.3s;
+    padding: 7px;
 }
 
 nav li:hover a {
@@ -417,7 +417,7 @@ nav li:hover a {
     display: flex;
     justify-content: center;
     height: auto;
-    margin: 100px 0px;
+    margin: 100px 0;
     padding: 10px;
     max-width: 100%;
 
@@ -433,7 +433,7 @@ nav li:hover a {
 
 fieldset{
     height: auto;
-    width: 50%;
+    width: 60%;
     margin: 10px auto;
     padding: 20px 30px;
 
@@ -503,8 +503,6 @@ textarea.error {
     height: 250px;
     padding: 10px;
     color: #ffffff;
-    align-items: center;
-
     /* border: 2px dashed red; */
 }
 
@@ -577,15 +575,20 @@ textarea.error {
 /**************** Responsive ****************/
 
 
-
-
-
+/*************************************************************** max-width: 1400px **********************/
+@media screen and (max-width: 1400px){
+    nav{
+        padding-right: 8em;
+        letter-spacing: 0;
+    }
+}
 /*************************************************************** max-width: 1024px **********************/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
 
     nav{
-        padding: 0;
+        padding-right: 10em;
+        letter-spacing: 0;
     }
     /***************************** HOME *****************************/
     .title{
@@ -685,14 +688,20 @@ textarea.error {
     .contact{
         margin: 20px;
     }
+    .rights-text{
+        text-align: center;
+    }
     /**************************************************************/
 }
 
 
 /*************************************************************** max-width: 850px **********************/
 
-@media screen and (max-width: 850px) {
-
+@media screen and (max-width: 920px) {
+    nav{
+        padding-right: 8em;
+        letter-spacing: 0;
+    }
     /*********************** Section: Blog ************************/
     .home h3 {         /** for 'under struction' sentence **/
         letter-spacing: normal;
@@ -714,7 +723,6 @@ textarea.error {
     }
     .info{
         width: 70vw;
-        margin: 0 auto;
         margin-top: 2%;
     }
     .html , .css , .javaScript , .java{
@@ -764,13 +772,13 @@ textarea.error {
         display: flex;
         justify-content: center;
         height: auto;
-        margin: 0px;
+        margin: 0;
         padding: 10px;
         width: auto;
     }
     .anchor-1{
         flex-direction: column;
-        flex-basis: 0%;
+        flex-basis: 0;
     }
     .infoAndPic{
         display: flex;
@@ -827,8 +835,8 @@ textarea.error {
     }
 
     .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 350px;
-        height: 180px;
+        width: 450px;
+        height: 250px;
 
         margin: 0.8vh 0;
     }
@@ -864,8 +872,13 @@ textarea.error {
 /*********************************************************** max-width: 450px **********************/
 
 @media screen and (max-width: 450px) {
-
-    /* .home h2 {
+    nav{
+        padding-right: 6em;
+    }
+    nav li a{
+        padding: 0;
+    }
+    .home h2 {
         font-size: 25px;
     }
     .home h4 {
@@ -874,19 +887,24 @@ textarea.error {
     .home h5 {
         font-size: inherit;
     }
-    .home h3 {         /** for 'under struction' sentence *
+    .home h3 {         /** for 'under struction' sentence */
         letter-spacing: normal;
         font-size: inherit;
-    } */
+    }
 
 
     /********************** Section: YouTube *********************/
+   .youTube {
+       padding: 0;
+       margin: 0;
+   }
     .anchor-2{
         flex-basis: 50%;
     }
 
     .videoContainer {
         height: 100%;
+        padding: 0;
         margin-bottom: 1vh;
     }
 
@@ -897,54 +915,71 @@ textarea.error {
     }
 
     .video-1, .video-2, .video-3 {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 190px;
         border-radius: 5%;
         margin: 10px;
     }
-}
-/**************************************************************/
-/********************* Section: Portfolio *********************/
-.anchor-3{
-    flex-direction: column;
-}
-.portfolioContainer {
-    height: 100%;
-    margin-bottom: 2.5vh;
-}
 
-.portfolio-1, .portfolio-2, .portfolio-3 {
-    width: 350px;
-    height: 190px;
-}
-/****************************************************************/
+    /**************************************************************/
+    /********************* Section: Portfolio *********************/
+    .portfolio {
+        padding: 0;
+        margin: 0;
+    }
 
-/*********************** Section: Blog ************************/
-.anchor-4{
-    flex-direction: column;
-}
-.blogContainer {
-    height: 100%;
-    margin-bottom: 2.5vh;
-}
+    .anchor-3{
+        flex-direction: column;
+    }
+    .portfolioContainer {
+        height: 100%;
+        padding: 0;
+        margin-bottom: 2.5vh;
+    }
 
-.blog-1, .blog-2, .blog-3 {
-    width: 350px;
-    height: 190px;
-}
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        width: 350px;
+        height: 190px;
+    }
+    /****************************************************************/
 
-/****************************************************************/
+    /*********************** Section: Blog ************************/
+    .blog {
+        padding: 0;
+        margin: 0;
+    }
+    .anchor-4{
+        flex-direction: column;
+    }
+    .blogContainer {
+        height: 100%;
+        padding: 0;
+        margin-bottom: 2.5vh;
+    }
 
-/*********************** Section: Contact ************************/
-.fieldset{
-    height: auto;
-    width: 100%;
-    margin: 10px auto;
-    padding: 20px 30px;
-}
+    .blog-1, .blog-2, .blog-3 {
+        width: 350px;
+        height: 190px;
+    }
 
-input[type=text], select, textarea {
-    width: 100%;
+    /****************************************************************/
+
+    /*********************** Section: Contact ************************/
+    .contact{
+        margin: 0;
+        padding: 0;
+    }
+    .fieldset{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+    }
+
 }
 /**************************************************************/
 
@@ -953,119 +988,132 @@ input[type=text], select, textarea {
 
 /************************************ max-width: 350px **********************************/
 
-/********* Home *********/
+/*!********* Home *********!*/
 
 
-@media screen and (max-width: 350px) {
-    .home h2 {
-        font-size: 20px;
-    }
-    .home h4 {
-        font-size: 12px;
-        letter-spacing: 0.11em;
-        font-weight: 600;
-    }
-    .home h5 {
-        font-size: 11px;
-        letter-spacing: 0.075em;
-        font-weight: 600;
-    }
-    .home h3 {         /** for 'under struction' sentence **/
-        letter-spacing: normal;
-        font-size: inherit;
-    }
+    @media screen and (max-width: 350px) {
+        nav{
+            padding-right: 5em;
+        }
+        nav li a{
+            padding: 0;
+        }
+
+        .home h2 {
+            font-size: 20px;
+        }
+        .home h4 {
+            font-size: 12px;
+            letter-spacing: 0.11em;
+            font-weight: 600;
+        }
+        .home h5 {
+            font-size: 11px;
+            letter-spacing: 0.075em;
+            font-weight: 600;
+        }
+        .home h3 {         /** for 'under struction' sentence **/
+            letter-spacing: normal;
+            font-size: inherit;
+        }
 
 
-    /********* nav *********/
+        /********* nav *********/
 
 
 
+        /****************************************************************/
+        .youTube {
+            padding: 0;
+            margin: 0;
+        }
+        .videoContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
 
+        .video-1, .video-2, .video-3 {
+            width: 300px;
+            height: 150px;
 
+            margin: 0.8vh 0;
+        }
 
-    /****************************************************************/
+        .youTube > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
 
-    .videoContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
+        /**************************************************************/
+        .portfolioContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
 
-    .video-1, .video-2, .video-3 {
-        width: 350px;
-        height: 200px;
+        .portfolio-1, .portfolio-2, .portfolio-3 {
+            width: 300px;
+            height: 150px;;
 
-        margin: 0.8vh 0;
-    }
+            margin: 0.8vh 0;
+        }
 
-    .youTube > h4{
-        font-size: inherit;
-        font-weight: 600;
-    }
+        .portfolio > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
 
-    /**************************************************************/
-    .portfolioContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
+        /****************************************************************/
+        .blogContainer {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 2.5vh;
+        }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 350px;
-        height: 200px;;
+        .blog-1, .blog-2, .blog-3 {
+            width: 300px;
+            height: 150px;
 
-        margin: 0.8vh 0;
-    }
+            margin: 0.8vh 0;
+        }
 
-    .portfolio > h4{
-        font-size: inherit;
-        font-weight: 600;
-    }
+        .blog > h4{
+            font-size: inherit;
+            font-weight: 600;
+        }
 
-    /****************************************************************/
-    .blogContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
+        /****************************************************************/
 
-    .blog-1, .blog-2, .blog-3 {
-        width: 350px;
-        height: 200px;
+        .aboutMe{
+            padding: 0;
+            width: 100%;
+        }
+        .infoAndPic{
+            display: flex;
+            flex-direction: column;
+            margin: 0 ;
+        }
+        .info{
+            width: 70vw;
+            margin-top: 20%;
+        }
+        .html , .css , .javaScript , .java{
+            width: 60vw;
+        }
+        .myPic{
+            margin: 0 auto;
+            width: 200px;
+        }
+        .contact{
+            margin: 0;
+            padding: 0;
+        }
+        .fieldset{
+            width: 100%;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+        }
 
-        margin: 0.8vh 0;
-    }
-
-    .blog > h4{
-        font-size: inherit;
-        font-weight: 600;
-    }
-
-    /****************************************************************/
-
-    .aboutMe{
-        padding: 0;
-        width: 100%;
-    }
-    .infoAndPic{
-        display: flex;
-        flex-direction: column;
-        margin: 0 ;
-    }
-    .info{
-        width: 70vw;
-        margin-top: 20%;
-    }
-    .html , .css , .javaScript , .java{
-        width: 60vw;
-    }
-    .myPic{
-        margin: 0 auto;
-        width: 200px;
-    }
-
-
-    input[type=text], select, textarea {
-        width: 100%;
-    }
 }
