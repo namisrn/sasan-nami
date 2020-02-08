@@ -753,9 +753,9 @@ textarea.error {
                 #e5e5e5;
     }
 
-    .logo {
-        display: 1;
-    }
+    /*.logo {*/
+    /*    display: 1;*/
+    /*}*/
 
     /****************************************************************/
 
@@ -898,7 +898,7 @@ textarea.error {
 
     .video-1, .video-2, .video-3 {
         width: 400px;
-        height: 250;
+        height: 250px;
         border-radius: 5%;
         margin: 10px;
     }
