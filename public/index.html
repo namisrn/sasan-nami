@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
@@ -13,15 +13,19 @@
 
 <!----------------------------------- START: Banner ----------------------------------------->
 
-
 <section id="home" class="home">
 
     <div class="title">
+
         <h2>Hi, <br><span>I'm Sasan Rafat Nami</span><br></h2>
         <h4>Junior Web-Developer & YouTuber</h4>
         <h5>Developer Student Clubs Lead 2019/20</h5>
 
         <h3> * Under Construction * </h3>
+
+        <div class="arrow"><a href="#aboutMe">
+            <img src="/img/arrowDown.png" alt="arrowDown">
+        </div></a>
 
     </div>
 </section>
@@ -46,12 +50,6 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 
-
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
 
 </nav>
 
@@ -128,13 +126,13 @@
 
             <div class="videoContainer">
                 <iframe class="video-1" src="https://www.youtube.com/embed/xfKH99vbQtA" frameborder="0" allow="accelerometer; autoplay;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <iframe class="video-2" src="https://www.youtube.com/embed/ZZ3kW5TL6ro" frameborder="0" allow="accelerometer;
-                    autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <iframe class="video-3" src="https://www.youtube.com/embed/BeA87bBlmZ0" frameborder="0" allow="accelerometer; autoplay;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -195,11 +193,10 @@
         <!-- <hr> -->
         <fieldset>
             <legend align="center">Contact me</legend>
-            <input id="fname" name="firstname" placeholder="Your name..." type="text">
-            <input id="lname" name="lastname" placeholder="Your last name..." type="text">
-            <input name="email" placeholder="Your Email..." required type="text">
-            <span class="tick"></span>
-            <textarea id="subject" name="subject" placeholder="Write somthing..." rows="3"></textarea>
+            <input id="fname" name="firstname" minlength="3" maxlength="15" placeholder="Your name *" type="text" required>
+            <input id="lname" name="lastname" minlength="3" maxlength="15" placeholder="Your last name *" type="text" required>
+            <input name="email" minlength="3" maxlength="25" placeholder="Your Email *" required type="email"  >
+            <textarea id="subject" name="subject" minlength="3" maxlength="400" placeholder="Write somthing *" rows="4" required></textarea>
             <input type="submit" value="Submit">
         </fieldset>
 
@@ -211,6 +208,7 @@
 <!----------------------------------- START: Footer  ----------------------------------------->
 <footer>
     <div class="footer-container">
+
         <div class="left-col">
             <div>
                 <p class="footerClass">SN</p>
