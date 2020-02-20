@@ -1,222 +1,195 @@
-/*** Colors ***//***
-
-Registration Black      #000000
-Yankees Blue            #14213d
-Vivid Red               #f60018
-Platinum                #e5e5e5
-Silver Chalice          #afafaf
-White                   #ffffff
-
-/*** Colors ***/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --Black: #000000;
+    --Blue: #14213d;
+    --Red: #f60018;
+    --Platinum: #e5e5e5;
+    --Silver: #6d6c6c;
+    --White: #ffffff;
 }
 
-html {
+html{
+    box-sizing: border-box;
+    background-color: var(--Black);
     scroll-behavior: smooth;
 }
 
-body {
-    position: relative;
-    background-color: #000000;
+body{
+    margin: 5px;
+    line-height: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(100px,auto);
+    grid-gap: 10px;
 
-hr {
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
-    width: 60%;
-    position: relative;
-    left: 20%;
 
+    /* border: 2px dashed red; */
 }
 
-.home {
-    position: relative;
+.underC{
+    display: block;
+    position: fixed;
+    top: 50%;
+}
+.underC > img {
+    transition: transform 0.2s;
+}
+.underC > img:hover {
+    transform: rotate(45deg);
+}
+
+
+
+/* Top Header */
+
+
+.top-header {
+    grid-column: 1/13;
+    display: flex;
     text-align: center;
     max-width: 100%;
-
-    /*border: 2px dashed red;*/
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
-    color: #cdcdcd;
-    height: 100vh; /*make the header full screen */
+    color: var(--Platinum);
+    height: 100vh;
+    width: 100vw;
     padding: 5vh;
-
-    /*border: 2px dashed red;*/
-}
-
-.title video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 80%;
-}
-
-.home  h2 , h5 , h4 {
-    mix-blend-mode: screen;
-
-    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
     align-items: center;
 
+    /* border: 2px dashed red; */
 }
 
-.home h2 {
-    margin-top: auto;
-    font-size: 35px;
+.name {
+    font-size: 2.5vw;
+    line-height: 8vh;
 }
 
-.home h2 span {
-    font-size: 1.2em;
-}
 
-.home h4 {
-    font-size: 22px;
+.caption-1{
+    font-size: 1.33vw;
     font-weight: 300;
     padding: 0;
     line-height: 1.5em;
     letter-spacing: 2.4px;
 }
 
-.home h5 {
-    font-size: 15px;
+.caption-2{
+    font-size: 0.98vw;
     font-weight: 400;
     padding: 0;
-    line-height: 2em;
+    line-height: 1em;
     letter-spacing: 3.75px;
     margin-bottom: auto;
 }
 
-.arrow{
-    position: relative;
-}
-.arrow img{
-    width: 50px;
-    height: auto;
-    transition: 0.3s;
-    border-radius: 50%;
-}
-.arrow img:hover{
-    background-color: #e5e5e5;
-    border-radius: 50%;
-    width: 50px;
-    height: auto;
+header > video{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+    z-index: -1;
 }
 
-/************************** under construction TEXT ********************/
-.title h3 {
-    color: #f60018;
-    letter-spacing: 15px;
-    font-style: italic;
-    z-index: 5;
-}
 
-/************************** under construction TEXT ********************/
+/* Navigation */
 
-
-/************************** START navigation bar ******************************/
-
-nav {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 5;
-    height: 10vh;
-    background: #000000;
+.main-nav{
+    display: grid;
+    grid-column: 3/11;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(12,1fr); */
     position: sticky;
     top: 0;
-    text-transform: uppercase;
-    padding-right: 22em;
-    /*border: 2px dashed red;*/
-}
-
-.main-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    align-items: center;
-    list-style: none;
-    height: 100%;
-
+    z-index: 10;
+    background-color: var(--Black);
     white-space: nowrap;
+
+
+    /* border: 2px dashed red; */
+
 }
 
-nav li a {
+.main-nav ul{
+    display: grid;
+    grid-gap: 5px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(6,1fr);
+    grid-column: 3/11;
+}
+
+.main-nav a{
+    display: block;
     text-decoration: none;
-    color: #e5e5e5;
-    font-size: 20px;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--Platinum);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
     letter-spacing: 2px;
     transition: 0.3s;
-    padding: 7px;
+
 }
 
 nav li:hover a {
     background: #f60018;
-    padding: 5px;
+    padding: 0.8rem;
     border-radius: 5px;
 }
 
+.transform{
+    background-color:red;
+}
+
+.logo{
+    text-align: center;
+    align-self: center;
+    grid-column: 1/3;
+}
 .logo h4 {
-    color: #aa0415;
+    color:#aa0415;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 0.1em;
+    grid-column: 1/3;
 
 }
 
-/************************** END navigation bar ******************************/
 
 
-/************************** START About ME ******************************/
+/* About Me */
 
-.aboutMe {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding: 10px;
-    width: 100%;
+.aboutme{
+    display: grid;
+    grid-column: 3/11;
+    grid-gap: 3vw;
+
+    grid-template-columns: 1fr 1fr;
+
+    /* border: 2px dashed red; */
+
+}
+
+.info-pic{
+    justify-self: end;
+    padding: 20px;
 
     /* border: 2px dashed red; */
 }
-.anchor-1{
-    display: flex;
-    flex-basis: 55%;
-
-    /* border: 2px dashed white; */
-}
-.infoAndPic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: auto;
-    vertical-align: text-bottom;
-    padding: 20px;
-    margin: 0 auto;
-
-    /*border: 2px dashed red;*/
-}
 
 .myPic {
-    width: 300px;
+    width: 16rem;
     border-radius: 50%;
 
-    /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
-
 
 .info{
     width: 300px;
@@ -224,215 +197,248 @@ nav li:hover a {
     margin-top: 1em;
     color: #e5e5e5;
     text-align: justify;
+    line-height: 1.3em;
 
     /* border: 2px dashed red; */
 }
 
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: auto;
-    vertical-align: text-bottom;
-    padding: 20px;
-    margin: 0 auto;
+.skills{
+    width: 18vw;
+    margin: 2vh 0;
+    color: azure;
+    list-style: none;
 
-    /*border: 2px dashed red;*/
+    /* border: 2px dashed red; */
 }
 
-.skillContainer {
-    width: 380px;
-    height: auto;
-    padding: 20px;
+.skills li{
+    margin: 20px 0;
 }
 
-.htmlLogo, .cssLogo, .jsLogo, .javaLogo {
+li > h3{
+    margin: 5px 0;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 3px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 3px;
+    float: left;
+    background: #2187e7;
+}
+
+.htmlcss{
+    width: 60%;
+    animation: htmlcss 2s;
+}
+
+.javascript{
+    width: 10%;
+    animation: javascript 2s;
+}
+
+.java{
+    width: 10%;
+    animation: java 2s;
+    margin: 0;
+}
+
+.flutter{
+    width: 5%;
+    animation: flutter 2s;
+}
+
+li > img{
     width: 40px;
-    margin-bottom: 5px;
+}
+
+li > h3 {
+    font-size: 15px;
 }
 
 
-/*****ENDE: About ME *****/
+@keyframes htmlcss {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
 
-/********************************* START Section: YouTube *****************/
-.youTube {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding: 10px;
-    max-width: 100%;
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes flutter {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+
+
+
+/* YouTUbe */
+
+.youtube{
+    display: grid;
+    grid-column: 3/11;
+
+    grid-gap: 1rem;
+    grid-template-rows: 0.5fr 1fr;
+
 
     /* border: 2px dashed red; */
 }
 
-.anchor-2{
-    display: flex;
-    flex-direction: column;
-
-    /* border: 2px dashed white; */
-}
-
-.youTube h4 {
-    display: flex;
-    justify-content: center;
+.youtube h4 {
+    align-self: center;
     text-align: center;
     width: 100%;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.3em;
-    margin: 2em auto;
     color: #e5e5e5;
 
     /* border: 2px dashed red; */
 }
 
+
 .videoContainer{
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 0 auto;
-
-
-    /* border: 2px dashed red; */
+    justify-self: center;
 }
 
 .video-1, .video-2, .video-3 {
-    width: 350px;
-    height: 190px;
-    /* overflow: hidden; */
-    background-color: #303030;
-    border-radius: 1em;
-    margin: 0 30px;
+    border-radius: 0.5em;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 1rem;
 }
 
+.video-1,.video-2,.video-3{ transition: all .1s ease-in-out; }
+.video-1:hover, .video-2:hover, .video-3:hover{ transform: scale(1.1); }
 
-/********************************* END Section: YouTube *****************/
 
-/********************************* START Section: Portfolio *****************/
+
+/* Portfolio */
+
+
 .portfolio{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
-    max-width: 100%;
+    display: none;
+    grid-column: 3/11;
+
+    grid-gap: 1rem;
+    grid-template-rows: 0.5fr 1fr;
 
 
     /* border: 2px dashed red; */
 }
 
-.anchor-3{
-    display: flex;
-    flex-direction: column;
-
-    /* border: 2px dashed white; */
-}
-
-
 .portfolio h4 {
-    display: flex;
-    justify-content: center;
+    align-self: center;
     text-align: center;
     width: 100%;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.3em;
     color: #e5e5e5;
-    margin: 2em auto
 
     /* border: 2px dashed red; */
 }
 
-.portfolioContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 0 auto;
 
-    /* border: 2px dashed red; */
+.portfolioContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-self: center;
 }
 
 .portfolio-1, .portfolio-2, .portfolio-3 {
-    width: 350px;
-    height: 190px;
+    width: 22rem;
+    height: 13rem;
     overflow: hidden;
-    background-color:#303030;
+    background-color: #303030;
     border-radius: 1em;
-    margin: 0 30px;
+    margin: 0 2rem;
 }
 
 
-/********************************* END Section: Portfolio *****************/
+/* Blog */
 
-/********************************* START Section: blog *****************/
 
 .blog{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding: 10px;
-    max-width: 100%;
+    display: none;
+    grid-column: 3/11;
+
+    grid-gap: 1rem;
+    grid-template-rows: 0.5fr 1fr;
 
 
     /* border: 2px dashed red; */
 }
 
-.anchor-4{
-    display: flex;
-    flex-direction: column;
-
-    /* border: 2px dashed white; */
-}
-
-
 .blog h4 {
-    display: flex;
-    justify-content: center;
+    align-self: center;
     text-align: center;
     width: 100%;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.3em;
     color: #e5e5e5;
-    margin: 2em auto
+
     /* border: 2px dashed red; */
 }
 
-.blogContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 0 auto;
 
-    /* border: 2px dashed red; */
+.blogContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-self: center;
 }
 
 .blog-1, .blog-2, .blog-3 {
-    width: 350px;
-    height: 190px;
+    width: 22rem;
+    height: 13rem;
     overflow: hidden;
-    background-color:#303030;
+    background-color: #303030;
     border-radius: 1em;
-    margin: 0 30px;
+    margin: 0 2rem;
+
 }
 
-
-/********************************* END Section: blog *****************/
-
-
-/*****Section: contact *****/
+/* Contact */
 
 .contact{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-column: 3/11;
+
     height: auto;
-    margin: 100px 0;
+    margin-top: 2rem;
     padding: 10px;
     max-width: 100%;
 
@@ -503,21 +509,21 @@ textarea.error {
     border-style: solid;
 }
 
-/*****ENDE: contact *****/
-
-/**************** ENDE: MAIN ****************/
-
-/**************** FOOTER ****************/
 
 
-.footer-container {
+/* Contact */
 
-    display: flex;
+footer {
+
+    display: grid;
+    grid-column: 3/11;
+
     justify-content: center;
     align-items: center;
     height: 250px;
     padding: 10px;
     color: #ffffff;
+
     /* border: 2px dashed red; */
 }
 
@@ -546,30 +552,6 @@ textarea.error {
 
 
 
-/**************** ENDE: FOOTER ****************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -589,546 +571,98 @@ textarea.error {
 
 /**************** Responsive ****************/
 
-
-/*************************************************************** max-width: 1400px **********************/
-@media screen and (max-width: 1400px){
-    nav{
-        padding-right: 8em;
-        letter-spacing: 0;
-    }
-}
-/*************************************************************** max-width: 1024px **********************/
-
-@media screen and (max-width: 1050px) {
-
-    nav{
-        padding-right: 10em;
-        letter-spacing: 0;
-    }
-    /***************************** HOME *****************************/
-    .title{
-        height: 100%;
-        padding: 2vh;
-    }
-    .home h2{
-        margin-top: 50px;
-    }
-    .home h5 {
-        margin-bottom: 50px;
-    }
-    .title h3{
-        font-size: 20px;
-    }
-
-    .main-menu {
-        width: 80%;
-    }
-
-
-    /********************** Section: YouTube *********************/
-    .anchor-2{
-        flex-basis: 100%;
-    }
-
-    .videoContainer {
-        height: 100%;
-        margin-bottom: 1vh;
-    }
-
-    .youTube h4{
-        font-size: 2em;
-        letter-spacing: 0.2em;
-        margin: 0;
-    }
-
-    .video-1, .video-2, .video-3 {
-        width: 250px;
-        height: auto;
-        border-radius: 5%;
-        margin: 0 0.5vw;
-    }
-    /**************************************************************/
-
-    /********************* Section: Portfolio *********************/
-    .anchor-3{
-        flex-basis: 100%;
-    }
-
-    .portfolioContainer {
-        height: 100%;
-        margin-bottom: 1vh;
-    }
-
-    .portfolio h4{
-        font-size: 2em;
-        letter-spacing: 0.2em;
-        margin: 0;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 250px;
-        height: 160px;
-        margin: 0 0.5vw;
-        border-radius: 5%;
-    }
-
-    /**************************************************************/
-
-    /*********************** Section: Blog ************************/
-    .anchor-4{
-        flex-basis: 100%;
-    }
-
-    .blogContainer {
-        height: 100%;
-        margin-bottom: 1vh;
-    }
-
-    .blog h4{
-        font-size: 2em;
-        letter-spacing: 0.2em;
-        margin: 0;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 250px;
-        height: 160px;
-        margin: 0 0.5vw;
-        border-radius: 5%;
-    }
-
-    /**************************************************************/
-
-    /*********************** Section: Contact ************************/
-    .contact{
-        margin: 20px;
-    }
-    .rights-text{
-        text-align: center;
-    }
-    /**************************************************************/
-}
-
-
-/*************************************************************** max-width: 850px **********************/
-
-@media screen and (max-width: 920px) {
-    nav{
-        padding-right: 8em;
-        letter-spacing: 0;
-    }
-    /*********************** Section: Blog ************************/
-    .home h3 {         /** for 'under struction' sentence **/
-        letter-spacing: normal;
-    }
-
-    .aboutMe{
-        padding: 0;
-        width: 100%;
-        align-content: center;
-    }
-    .infoAndPic{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .myPic{
-        margin: 0 auto;
-    }
-    .info{
-        width: 70vw;
-        margin-top: 2%;
-    }
-    .html , .css , .javaScript , .java{
-        width: 70vw;
+@media screen and (max-width: 1280px){
+    .main-nav, .aboutme, .youtube, .portfolio, .blog, .contact, footer{
+        grid-column: 2/12;
     }
     .skills{
-        display: flex;
+        width: 25vw;
+    }
+    .skills{
+        width: 35vw;
+    }
+    .name {
+        font-size: 4vw;
+    }
+    .caption-1{
+        font-size: 2.1vw;
+    }
+    .caption-2{
+        font-size: 1.55vw;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .main-nav, .aboutme, .youtube, .portfolio, .blog, .contact, footer{
+        grid-column: 1/13;
+    }
+
+    /*HAMBURGER MENU*/
+    /*HAMBURGER MENU*/
+    /*HAMBURGER MENU*/
+}
+
+@media screen and (max-width: 750px){
+    .youtube{
+        grid-template-rows: 100px 1fr;
+    }
+    .videoContainer{
+        flex-direction: column;
+    }
+    .video-1, .video-2, .video-3 {
+        margin: 2vw 0;
         width: 70vw;
+        height: 40vh;
+    }
+
+    .name {
+        font-size: 6vw;
+    }
+    .caption-1{
+        font-size: 3.2vw;
+    }
+    .caption-2{
+        font-size: 2.3vw;
+    }
+
+    .aboutme{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1vh;
+    }
+    .info-pic{
+        justify-self: center;
+        width: 50vw;
         padding: 0;
-        margin: 0 auto;
     }
-    .skillContainer{
-        padding: 0;
-    }
-
-    input[type=text], select, textarea {
-        width: 65%;
-    }
-
-
-    /***************************** NAV *****************************/
-    nav{
-        display: flex;
-        height: auto;
-        position: relative;
-    }
-    .main-menu {
-        position: relative;
-        height: auto;
-        background: #292929;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        color:
-                #e5e5e5;
-    }
-
-    /*.logo {*/
-    /*    display: 1;*/
-    /*}*/
-
-    /****************************************************************/
-
-    /*************************** ABOUT ME **************************/
-    .aboutMe{
-        display: flex;
-        justify-content: center;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-        width: auto;
-    }
-    .anchor-1{
-        flex-direction: column;
-        flex-basis: 0;
-    }
-    .infoAndPic{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        margin: 0 ;
+    .skills{
+        justify-self: center;
+        width: 50vw;
     }
     .info{
-        width: auto;
-        margin-top: 10%;
-    }
-    .html , .css , .javaScript , .java{
-        width: 60vw;
+        width: 50vw;
+        margin: 1em auto;
     }
     .myPic{
-        margin: 0 auto;
-        width: 200px;
+        margin: 1em auto;
     }
+}
 
-    .skills{
-        width: auto;
-    }
-
-    .skillContainer{
-        width: auto;
-    }
-    /****************************************************************/
-
-    /********************** Section: YouTube *********************/
-    .anchor-2{
-        flex-basis: 100%;
-    }
-
-    .videoContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
-    }
-
+@media screen and (max-width: 480px){
     .video-1, .video-2, .video-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
+        height: 20vh;
     }
-
-    /**************************************************************/
-
-    /********************* Section: Portfolio *********************/
-    .portfolioContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
+    .name {
+        font-size: 7vw;
+        line-height: 1em;
     }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
+    .caption-1{
+        font-size: 4.1vw;
     }
-    /****************************************************************/
-
-    /*********************** Section: Blog ************************/
-    .blogContainer {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2.5vh;
+    .caption-2{
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 1.5em;
     }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 450px;
-        height: 250px;
-
-        margin: 0.8vh 0;
-    }
-
-    /****************************************************************/
-
-    /*********************** Section: Contact ************************/
-    .fieldset{
-        width: 70%;
-    }
-
-    input[type=text], select, textarea {
-        width: 100%;
-    }
-    /**************************************************************/
-
 }
-/*********************************************************** max-width: 450px **********************/
 
-@media screen and (max-width: 450px) {
-    nav{
-        padding-right: 6em;
-    }
-    nav li a{
-        padding: 0;
-    }
-    .home h2 {
-        font-size: 25px;
-    }
-    .home h4 {
-        font-size: inherit;
-    }
-    .home h5 {
-        font-size: inherit;
-    }
-    .home h3 {         /** for 'under struction' sentence */
-        letter-spacing: normal;
-        font-size: inherit;
-    }
-
-
-    /********************** Section: YouTube *********************/
-   .youTube {
-       padding: 0;
-       margin: 0;
-   }
-    .anchor-2{
-        flex-basis: 50%;
-    }
-
-    .videoContainer {
-        height: 100%;
-        padding: 0;
-        margin-bottom: 1vh;
-    }
-
-    .youTube h4{
-        font-size: 2em;
-        letter-spacing: 0.2em;
-        margin: 0;
-    }
-
-    .video-1, .video-2, .video-3 {
-        width: 350px;
-        height: 190px;
-        border-radius: 5%;
-        margin: 10px;
-    }
-
-    /**************************************************************/
-    /********************* Section: Portfolio *********************/
-    .portfolio {
-        padding: 0;
-        margin: 0;
-    }
-
-    .anchor-3{
-        flex-direction: column;
-    }
-    .portfolioContainer {
-        height: 100%;
-        padding: 0;
-        margin-bottom: 2.5vh;
-    }
-
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        width: 350px;
-        height: 190px;
-    }
-    /****************************************************************/
-
-    /*********************** Section: Blog ************************/
-    .blog {
-        padding: 0;
-        margin: 0;
-    }
-    .anchor-4{
-        flex-direction: column;
-    }
-    .blogContainer {
-        height: 100%;
-        padding: 0;
-        margin-bottom: 2.5vh;
-    }
-
-    .blog-1, .blog-2, .blog-3 {
-        width: 350px;
-        height: 190px;
-    }
-
-    /****************************************************************/
-
-    /*********************** Section: Contact ************************/
-    .contact{
-        margin: 0;
-        padding: 0;
-    }
-    .fieldset{
-        height: auto;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    input[type=text], select, textarea {
-        width: 100%;
-    }
-
-}
-/**************************************************************/
-
-
-
-
-/************************************ max-width: 350px **********************************/
-
-/*!********* Home *********!*/
-
-
-    @media screen and (max-width: 350px) {
-        nav{
-            padding-right: 5em;
-        }
-        nav li a{
-            padding: 0;
-        }
-
-        .home h2 {
-            font-size: 20px;
-        }
-        .home h4 {
-            font-size: 12px;
-            letter-spacing: 0.11em;
-            font-weight: 600;
-        }
-        .home h5 {
-            font-size: 11px;
-            letter-spacing: 0.075em;
-            font-weight: 600;
-        }
-        .home h3 {         /** for 'under struction' sentence **/
-            letter-spacing: normal;
-            font-size: inherit;
-        }
-
-
-        /********* nav *********/
-
-
-
-        /****************************************************************/
-        .youTube {
-            padding: 0;
-            margin: 0;
-        }
-        .videoContainer {
-            flex-direction: column;
-            height: 100%;
-            margin-bottom: 2.5vh;
-        }
-
-        .video-1, .video-2, .video-3 {
-            width: 300px;
-            height: 150px;
-
-            margin: 0.8vh 0;
-        }
-
-        .youTube > h4{
-            font-size: inherit;
-            font-weight: 600;
-        }
-
-        /**************************************************************/
-        .portfolioContainer {
-            flex-direction: column;
-            height: 100%;
-            margin-bottom: 2.5vh;
-        }
-
-        .portfolio-1, .portfolio-2, .portfolio-3 {
-            width: 300px;
-            height: 150px;;
-
-            margin: 0.8vh 0;
-        }
-
-        .portfolio > h4{
-            font-size: inherit;
-            font-weight: 600;
-        }
-
-        /****************************************************************/
-        .blogContainer {
-            flex-direction: column;
-            height: 100%;
-            margin-bottom: 2.5vh;
-        }
-
-        .blog-1, .blog-2, .blog-3 {
-            width: 300px;
-            height: 150px;
-
-            margin: 0.8vh 0;
-        }
-
-        .blog > h4{
-            font-size: inherit;
-            font-weight: 600;
-        }
-
-        /****************************************************************/
-
-        .aboutMe{
-            padding: 0;
-            width: 100%;
-        }
-        .infoAndPic{
-            display: flex;
-            flex-direction: column;
-            margin: 0 ;
-        }
-        .info{
-            width: 70vw;
-            margin-top: 20%;
-        }
-        .html , .css , .javaScript , .java{
-            width: 60vw;
-        }
-        .myPic{
-            margin: 0 auto;
-            width: 200px;
-        }
-        .contact{
-            margin: 0;
-            padding: 0;
-        }
-        .fieldset{
-            width: 100%;
-        }
-        input[type=text], select, textarea {
-            width: 100%;
-        }
-
-}
