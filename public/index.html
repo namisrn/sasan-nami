@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasan R.Nami</title>
-    <script src="https://kit.fontawesome.com/2b61f5eaec.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b61f5eaec.js" crossorigin="anonymous"></script>
+    <script src="action.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Sasan R.Nami</title>
 </head>
 <body>
 <div class="container">
 
     <div class="underC">
         <!-- <p>Under Construction</p> -->
-        <img src="img/underconstruction.png" alt="">
+        <img src="/img/underconstruction.png" alt="">
     </div>
 
     <!-- Top Header -->
@@ -48,6 +48,47 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="resp-nav">
+        <div class="fronticon icon-holder">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="resp-menu-options">
+            <li>
+                <a href="#home">
+                    <span class="menu-label">Home</span>
+                    <div class="icon-holder">
+                        <i class="fas fa-home"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#aboutme">
+                    <span class="menu-label">About Me</span>
+                    <div class="icon-holder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#youtube">
+                    <span class="menu-label">YouTube</span>
+                    <div class="icon-holder">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span class="menu-label">Contact</span>
+                    <div class="icon-holder">
+                        <i class="fas fa-envelope-square"></i>
+                    </div>
+                </a>
+            </li>
+        </div>
+    </div>
 
     <!-- Sections: About Me -->
     <section id="aboutme" class="aboutme">
@@ -140,15 +181,14 @@
 
     <!-- Sections: Contact -->
     <section id="contact" class="contact">
-
-        <!-- <hr> -->
-        <fieldset>
+        <div id="error"></div>
+        <fieldset id="form">
             <legend align="center">Contact me</legend>
             <input id="fname" name="firstname" minlength="3" maxlength="15" placeholder="Your name *" type="text" required>
             <input id="lname" name="lastname" minlength="3" maxlength="15" placeholder="Your last name *" type="text" required>
             <input name="email" minlength="3" maxlength="25" placeholder="Your Email *" required type="email"  >
             <textarea id="subject" name="subject" minlength="3" maxlength="400" placeholder="Write somthing *" rows="4" required></textarea>
-            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
         </fieldset>
 
     </section><!-- Contacts Ends -->
@@ -175,6 +215,5 @@
     </footer> <!-- Footer Ends -->
 
 </div> <!-- Container Ends -->
-<script src="/action.js"></script>
 </body>
 </html>
