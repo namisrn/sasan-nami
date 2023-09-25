@@ -29,19 +29,6 @@ body{
     /* border: 2px dashed red; */
 }
 
-.underC{
-    display: block;
-    position: fixed;
-    top: 50%;
-}
-.underC > img {
-    transition: transform 0.2s;
-}
-.underC > img:hover {
-    transform: rotate(45deg);
-}
-
-
 
 /* Top Header */
 
