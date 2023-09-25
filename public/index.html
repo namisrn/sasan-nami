@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b61f5eaec.js" crossorigin="anonymous"></script>
-    <script src="action.js"></script>
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="favicon" href="img/favicon.ico">
     <link rel="icon" sizes= "192*192" href="img/SNLogo.png">
@@ -27,8 +27,8 @@
                 <source src="img/Pexel.mp4" type="video/mp4">
             </video>
 
-            <div class="name">Hi, <br><span>I'm Sasan Rafat Nami</span><br></div>
-            <div class="caption-1">Junior Web-Developer & YouTuber</div>
+            <div class="name">Hi, <br><span>I'm Sasan Nami</span><br></div>
+            <div class="caption-1">Junior Web and iOS-Developer</div>
             <div class="caption-2">Developer Student Clubs Lead 2019/20</div>
         </header>
     </section>
@@ -44,8 +44,8 @@
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#myapps" class="isDisable">My Apps</a></li>
             <li><a href="#youtube">YouTube</a></li>
-            <li><a href="#portfolio" class="isDisable">Portfolio</a></li>
             <li><a href="#blog" class="isDisable">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -98,24 +98,34 @@
         <div class="info-pic">
             <img alt="myPic" class="myPic" src="img/mypic.jpg">
             <article class="info">
-                My name is Sasan Rafat Nami. I am a Junior Web-Developer and
-                Tech-YouTuber. Also i'm Developer Student clubs Lead 2019/20 powered by Google Developers. <br>
-                I'm 28 years old and live in Hamm, Germany.
+                My name is Sasan Rafat Nami. I am a Junior Weba dn WatchOS/iOS Developer. Also I was Developer Student clubs Lead 2019/20 powered by Google Developers. <br>
             </article>  <!--END info-->
         </div>
 
         <div class="skills">
 
             <li>
-                <img alt="htmlLogo" class="htmlLogo" src="img/htmllogo.svg">
-                <img alt="cssLogo" class="cssLogo" src="img/css.svg">
-                <h3>HTML5 / CSS3</h3><span class="bar"><span class="htmlcss"></span></span>
+                <img alt="iosDevLogo" src="img/iosDev.jpg">
+                <img alt="watchosDevLogo"  src="img/watchosDev.png">
+                <h3>iOS / WatchOS</h3><span class="bar"><span class="appledev"></span></span>
+            </li>
+
+            <li>
+                <img alt="angularLogo" src="img/AngularLogo.png">
+                <h3>Angular</h3><span class="bar"><span class="angular"></span></span>
+            </li>
+
+            <li>
+                <img alt="htmlLogo"  src="img/htmllogo.svg">
+                <img alt="cssLogo" src="img/css.svg">
+                <img alt="jsLogo" class="jsLogo" src="img/js.svg">
+                <h3>HTML5 / CSS3 / JavaScript</h3><span class="bar"><span class="htmlcssjs"></span></span>
             </li>
 
 
             <li>
-                <img alt="jsLogo" class="jsLogo" src="img/js.svg">
-                <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
+                <img alt="reactLogo" class="reactLogo" src="img/React-icon.svg.png">
+                <h3>React</h3><span class="bar"><span class="react"></span></span>
             </li>
 
 
@@ -136,64 +146,82 @@
     </section> <!-- About Me Ends -->
 
 
+    <!-- Sections: My Apps -->
+<section id="myapps" class="myapps">
+
+    <h4>My Apps</h4>
+
+    <div class="appContainer">
+        <div class="app">
+            <img src="/public/img/wmgpt-20.jpg" alt="WatchMyAI">
+            <h3>WatchMyAI</h3>
+            <p>This is an app specially designed for the Apple Watch. It brings the power of Generative Pretrained Transformer technologies into a user-friendly interface, providing you with an intelligent assistant right on your wrist.            </p>
+            <a href="https://apps.apple.com/de/app/watchmyai/id6467128626" class="app-link" >View in App Store</a>
+        </div>
+
+        <!-- Add more app entries as needed -->
+
+    </div>
+
+</section><!-- My Apps Ends -->
+
+
+
     <!-- Sections: YouTube -->
     <Section id="youtube" class="youtube">
 
-        <h4>YouTube Videos</h4>
+        <h4>YouTube Video</h4>
 
         <div class="videoContainer">
-            <iframe class="video-1" src="https://www.youtube.com/embed/xfKH99vbQtA" frameborder="0" allow="accelerometer; autoplay;
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
 
-            <iframe class="video-2" src="https://www.youtube.com/embed/ZZ3kW5TL6ro" frameborder="0" allow="accelerometer;
+            <iframe class="video-1" src="https://www.youtube.com/embed/ZZ3kW5TL6ro" frameborder="0" allow="accelerometer;
                         autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <iframe class="video-3" src="https://www.youtube.com/embed/BeA87bBlmZ0" frameborder="0" allow="accelerometer; autoplay;
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </div>
     </Section><!-- YouTube Ends -->
 
+<!-- Sections: Blog -->
+<section id="blog" class="blog">
 
-    <!-- Sections: Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <h4>Blog (soon)</h4>
 
-        <h4>Portfolio (soon)</h4>
-
-        <div class="portfolioContainer">
-            <div class="portfolio-1"></div>
-            <div class="portfolio-2"></div>
-            <div class="portfolio-3"></div>
+    <div class="blogContainer">
+        <!--
+        <div class="blog-entry">
+            <img src="blog1.png" alt="Blog 1">
+            <h3>Blog Post 1</h3>
+            <p>Summary of Blog Post 1.</p>
+            <a href="link_to_blog1" class="blog-link">Read More</a>
         </div>
 
-    </section><!-- Portfolio Ends -->
-
-
-    <!-- Sections: Portfolio -->
-    <section id="blog" class="blog">
-
-        <h4>Blog (soon)</h4>
-
-        <div class="blogContainer">
-            <div class="blog-1"></div>
-            <div class="blog-2"></div>
-            <div class="blog-3"></div>
+        <div class="blog-entry">
+            <img src="blog2.png" alt="Blog 2">
+            <h3>Blog Post 2</h3>
+            <p>Summary of Blog Post 2.</p>
+            <a href="link_to_blog2" class="blog-link">Read More</a>
         </div>
-    </section><!-- Portfolio Ends -->
+ -->
+        <!-- Add more blog entries as needed -->
+
+    </div>
+
+</section><!-- Blog Ends -->
 
 
-    <!-- Sections: Contact -->
-    <section id="contact" class="contact">
-        <div id="error"></div>
-        <fieldset id="form">
-            <legend align="center">Contact me</legend>
-            <input id="fname" name="firstname" minlength="3" maxlength="15" placeholder="Your name *" type="text" required>
-            <input id="lname" name="lastname" minlength="3" maxlength="15" placeholder="Your last name *" type="text" required>
-            <input name="email" minlength="3" maxlength="25" placeholder="Your Email *" required type="email"  >
-            <textarea id="subject" name="subject" minlength="3" maxlength="400" placeholder="Write somthing *" rows="4" required></textarea>
-            <button type="submit">Submit</button>
-        </fieldset>
 
-    </section><!-- Contacts Ends -->
+<!-- Sections: Contact -->
+<section id="contact" class="contact">
+    <div id="error"></div>
+    <fieldset id="form">
+        <legend align="center">Contact me</legend>
+        <div class="contact-info">
+            <a href="mailto:nami.srn@icloud.com" class="contact-email">nami.srn@icloud.com</a>
+        </div>
+    </fieldset>
+</section><!-- Contacts Ends -->
+
 
 
 
@@ -211,11 +239,19 @@
                     <a href="https://www.linkedin.com/in/sasannami/" target="_blank"><img src="img/linkedinIcon.svg" alt="linkedinIcon"></a>
                     <a href="https://github.com/namisrn" target="_blank" ><img src="img/Github_icon-icons.com_66788.svg"  alt="GithubIcon"></a>
                 </div>
-                <p class="rights-text"> © 2020 Created by Sasan R.Nami All Rights Reserved.</p>
+                <p class="rights-text" id="year"></p>
             </div>
         </div>
     </footer> <!-- Footer Ends -->
 
 </div> <!-- Container Ends -->
 </body>
+
+<script>
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = `© ${currentYear} Created by SasanNami All Rights Reserved.`;
+  </script>
+
+
 </html>
