@@ -275,7 +275,7 @@ li > h3 {
 
 @keyframes appledev {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 35%;
@@ -284,7 +284,7 @@ li > h3 {
 
 @keyframes angular {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 20%;
@@ -293,7 +293,7 @@ li > h3 {
 
 @keyframes htmlcssjs {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 50%;
@@ -302,7 +302,7 @@ li > h3 {
 
 @keyframes react {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 10%;
@@ -311,7 +311,7 @@ li > h3 {
 
 @keyframes java {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 10%;
@@ -320,7 +320,7 @@ li > h3 {
 
 @keyframes flutter {
     0%{
-        width: 0%;
+        width: 0;
     }
     100%{
         width: 5%;
@@ -642,7 +642,7 @@ footer {
 }
 
 @media screen and (max-width: 980px){
-    .main-nav, .aboutme, .youtube, .portfolio, .blog, .contact, footer{
+    .main-nav, .aboutme, .youtube, .myapps, .blog, .contact, footer{
         grid-column: 1/13;
     }
 
