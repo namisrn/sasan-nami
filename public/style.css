@@ -55,19 +55,19 @@ body{
 
 
 .caption-1{
-    font-size: 1.33vw;
+    font-size: 1.35vw;
     font-weight: 300;
     padding: 0;
     line-height: 1.5em;
-    letter-spacing: 2.4px;
+    letter-spacing: 4px;
 }
 
 .caption-2{
-    font-size: 0.98vw;
+    font-size: 0.85vw;
     font-weight: 400;
     padding: 0;
     line-height: 1em;
-    letter-spacing: 3.75px;
+    letter-spacing: 3px;
     margin-bottom: auto;
 }
 
